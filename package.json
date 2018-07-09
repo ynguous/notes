@@ -3,20 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "startComments": "SEQUELIZE_CONNECT=models/sequelize-sqlite.yaml NOTES_MODEL=models/notes-sequelize USERS_MODEL=models/users-rest USER_SERVICE_URL=http://localhost:3333 node ./bin/www",
-    "start": "npm run envSequelize && npm run envNoteModel && npm run envUserRest && npm run envUserServiceUrl && node ./bin/www",
-    "start-server1": "SEQUELIZE_CONNECT=models/sequelize-sqlite.yaml NOTES_MODEL=models/notes-sequelize USERS_MODEL=models/users-rest USER_SERVICE_URL=http://localhost:3333 PORT=3000 node ./bin/www",
-    "start-server2": "SEQUELIZE_CONNECT=models/sequelize-sqlite.yaml NOTES_MODEL=models/notes-sequelize USERS_MODEL=models/users-rest USER_SERVICE_URL=http://localhost:3333 PORT=3002 node ./bin/www",
-    "bootstrapsetup": "cd bower_components/bootstrap && npm install && npm install grunt-cli ",
-    "buildbootstrap": "copy variables.less bower_components/bootstrap/less && cd bower_components/bootstrap && grunt",
-    "envDebug": "set DEBUG=users:*",
-    "envPort": "set PORT=3333",
-    "envSequelize": "set SEQUELIZE_CONNECT=models\\sequelize-sqlite.yaml",
-    "envNoteModel": "set NOTES_MODEL=models\\notes-sequelize",
-    "envUserRest": "set USERS_MODEL=models\\users-rest",
-    "envUserServiceUrl": "set USER_SERVICE_URL=http://localhost:3333"
-
-
+    "start": "node ./bin/www",
   },
   "engines": {
     "node": ">=5.x"
