@@ -7,7 +7,7 @@
     "start": "npm run envSequelize && npm run envNoteModel && npm run envUserRest && npm run envUserServiceUrl && node ./bin/www",
     "start-server1": "SEQUELIZE_CONNECT=models/sequelize-sqlite.yaml NOTES_MODEL=models/notes-sequelize USERS_MODEL=models/users-rest USER_SERVICE_URL=http://localhost:3333 PORT=3000 node ./bin/www",
     "start-server2": "SEQUELIZE_CONNECT=models/sequelize-sqlite.yaml NOTES_MODEL=models/notes-sequelize USERS_MODEL=models/users-rest USER_SERVICE_URL=http://localhost:3333 PORT=3002 node ./bin/www",
-    "postinstall": "bower install",
+    "postinstallComments": "bower install",
     "bootstrapsetup": "cd bower_components/bootstrap && npm install && npm install grunt-cli ",
     "buildbootstrap": "copy variables.less bower_components/bootstrap/less && cd bower_components/bootstrap && grunt",
     "envDebug": "set DEBUG=users:*",
